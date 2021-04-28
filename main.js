@@ -1,5 +1,7 @@
 // **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
 
+const { CLIEngine } = require("eslint");
+
 
 // ***************************
 //          PART ONE
@@ -15,12 +17,17 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
+const num2String = (num) => {
+  return num.toString();
+}
 
 
 // Write a JavaScript program to convert a string to the number.
+const string2Num = (str) => {
+  return Number(str);
+}
 
-
+console.log('NEW', string2Num('42'))
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -30,11 +37,14 @@ const displayDate = () => {
   // * NaN
   // * String
   
+  // write a funtion that takes in a variable that is a datatype
+  // return the type of that variable - using the typeof operator
 
   
 // Write a JavaScript program that adds 2 numbers together.
-
-
+const add =(num1. num2) => {
+  return num1 + num2;
+}
 
 // Write a JavaScript program that runs only when 2 things are true.
 
