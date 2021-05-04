@@ -11,5 +11,58 @@
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
     <hr/>
+    <input id="firstNumber" type="text" placeholder="Enter 1st Number" />
+    <input id="secondNumber" type="text" placeholder="Enter 2nd Number" />
+    <button
+      onclick="addTwoNumbers(document.getElementById('firstNumber').value,document.getElementById('secondNumber').value)">
+      Click Me For The Sum
+    </button>
+    <div id="sum"></div>
+    <hr />
+    <h2>Check thisOne and thatOne</h2>
+    <div>
+      <input type="checkbox" id="thisOne"  /> thisOne
+    </div>
+    <div>
+      <input type="checkbox" id="thatOne"  /> thatOne
+    </div>
+    <div>
+      <button
+        onclick="checkTwoIsTrue(document.getElementById('thisOne').checked,document.getElementById('thatOne').checked)"
+      >
+       Submit Answers 
+      </button>
+    </div>
+    <hr/>
+    <h2>Check thisOneTwo</h2>
+    <div>
+      <input type="checkbox" id="thisOneTwo"  /> thisOneTwo
+    </div>
+    <div>
+      <input type="checkbox" id="notThisOne"  /> notThisOne
+    </div>
+    <div>
+      <button
+        onclick="checkOneIsTrue(document.getElementById('thisOneTwo').checked,document.getElementById('notThisOne').checked)"
+      >
+       Submit Answers 
+      </button>
+    </div>
+    <hr/>
+    <h2>Check neither of these</h2>
+    <div>
+      <input type="checkbox" id="theseOne"  /> theseOne
+    </div>
+    <div>
+      <input type="checkbox" id="theseTwo"  /> theseTwo
+    </div>
+    <div>
+      <button
+        onclick="checkBothFalse(document.getElementById('theseOne').checked,document.getElementById('theseTwo').checked)"
+      >
+       Submit Answers 
+      </button>
+    </div>
+    <hr/>
   </body>
 </html>

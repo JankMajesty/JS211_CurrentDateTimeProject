@@ -1,8 +1,5 @@
 // **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
 
-const { CLIEngine } = require("eslint");
-
-
 // ***************************
 //          PART ONE
 // ***************************
@@ -36,25 +33,59 @@ console.log('NEW', string2Num('42'))
   // * Number
   // * NaN
   // * String
+  const getDataType = (data) => {
+    let dataType = typeof data;
+    console.log("data type is " + dataType);
   
-  // write a funtion that takes in a variable that is a datatype
-  // return the type of that variable - using the typeof operator
+    switch (dataType) {
+  
+    }
+  
+  }
+  
+  getDataType(true);
+  getDataType(null);
+  getDataType(undefined);
+  getDataType(3);
+  getDataType(NaN);
+  getDataType("5");
 
   
 // Write a JavaScript program that adds 2 numbers together.
-const add =(num1. num2) => {
-  return num1 + num2;
+const addTwoNumbers = (firstNumber, secondNumber) => {
+  if(!firstNumber || !secondNumber){
+    alert("Please enter both numbers");
+    return;
+
+  } 
+  console.log("first num is " +  firstNumber );
+  let sum = parseInt(firstNumber) + parseInt(secondNumber);
+  document.getElementById("sum").innerHTML = `Sum is ${sum}`;
 }
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-
+const checkTwoIsTrue = (thisOne, thatOne) => {
+  if (thisOne && thatOne) {
+    alert("thisOne and thatOne");
+  }
+}
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const checkOneIsTrue = (thisOneTwo, notThisOne) => {
+  if (thisOneTwo || notThisOne) {
+    alert("thisOneTwo is true");
+  }
+}
 
+// Write a JavaScript program that runs when both things are not true. 
 
-// Write a JavaScript program that runs when both things are not true.  
+const checkBothFalse = (theseOne, theseTwo) => {
+  if (!theseOne && !theseTwo) {
+    alert("neither of these");
+  }
+}
 
 // ***************************
 //         PART TWO
